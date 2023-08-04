@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/Logomark.svg">
+    <link rel="stylesheet" href="styles.css">
+    <title>Voodoo Test Anastasiia M.</title>
+</head>
+
+<body class="min-h-screen bg-bglight font-basefont text-primary text-basic w-full box-border flex flex-col relative">
+    <!-- header -->
+    <header class="h-fit pl-62 pr-120 py-48 border-b border-black">
+        <section class="  flex flex-row justify-between items-start h-headerh ">
+            <h1 class="flex flex-row items-start gap-3">
+                <img class="h-2.8125 w-2.8125 mobile:w-smicons" src="./img/Logomark.svg" alt="Logomark">
+                <img class="mobile:w-[107px]" src="./img/VooDoo Test.svg" alt="Logo Text">
+            </h1>
+            <div class="flex justify-between items-center gap-12">
+                <a href="#">
+                    <img id="shop-icon" class="h-1,5 w-1,5" src="./img/shopping-cart.svg" alt="shopping-cart icon">
+                </a>
+                <a class="bg-primary text-hover kmd:text-xl mobile:text-basic p-3 font-bold rounded"
+                    href="#">Sign-up</a>
+            </div>
+        </section>
+    </header>
+
+    <!-- main -->
+
+    <main class="mx-auto mt-52,12 pt-48 mb-[100px]">
+        <section class="xxl:min-w-content ">
+            <!-- custom element for black disclosure with hidden info -->
+            <info-drop
+                class="text-hover w-full h-[72px] p-6 bg-primary rounded flex flex-row flex-nowrap items-center justify-start relative">
+            </info-drop>
+            <!-- custom element END -->
+
+            <!-- card -->
+            <ul id="productList"
+                class="grid  gap-x-6 gap-y-12 xxl:grid-cols-4 pt-48 justify-between w-full mobile:justify-center lg:grid-cols-2 xl:grid-cols-3">
+                <!-- cards fetched in JS -->
+            </ul>
+            <!-- card end -->
+
+            <!-- SHOPPING CART -->
+            <section id="shop-cart" class="hidden h-full w-cart bg-cartbg absolute z-30 top-px right-px">
+                <div class="flex flex-col justify-start items-end mx-auto text-bglight w-cartcontent">
+                    <div class="flex justify-between content-center border-b border-bglight w-full pt-12 pb-22">
+                        <h2 class="text-2xl font-bold capitalize">Shopping cart</h2>
+                        <a class="close-cart" href="#">
+                            <img class="w-smicons h-smicons" src="./img/close-icon.svg" alt="close icon">
+                        </a>
+                    </div>
+                    <ul class="shop-cart__list flex flex-col w-full border-b border-bglight mt-53 gap-y-10">
+                        <!-- shopping cart cardslist  -->
+                    </ul>
+                    <!-- TOTAL -->
+                    <div id="totalWrap"
+                        class="flex flex-row flex-nowrap justify-between items-center w-full uppercase mt-35 font-bold">
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- PAGINATION -->
+
+            <nav>
+                <ul class=" flex flex-row justify-between items-center gap-2.5 h-pag w-pagmin mx-auto font-light
+                            text-lg text-pagfont text-primary mt-70 text-center">
+
+                    <li class="h-pag w-pag bg-bglight border hover:bg-primary border-primary rounded-full ">
+                        <a href="#"
+                            class="flex justify-center items-center w-full h-full text-center hover:text-hover">1</a>
+                    </li>
+                    <li class="h-pag w-pag bg-bglight border hover:bg-primary border-primary rounded-full ">
+                        <a href="#" class="flex justify-center items-center w-full h-full hover:text-hover">2</a>
+                    </li>
+                    <li class="h-pag w-pag bg-bglight border hover:bg-primary border-primary rounded-full ">
+                        <a href="#" class="flex justify-center items-center w-full h-full hover:text-hover">3</a>
+                    </li>
+                    <li class="h-pag w-pag bg-bglight border hover:bg-primary border-primary rounded-full ">
+                        <a href="#" class="flex justify-center items-center w-full h-full  hover:text-hover">4</a>
+                    </li>
+                    <li class="h-pag w-pag bg-bglight border hover:bg-primary border-primary rounded-full ">
+                        <a href="#" class="flex justify-center items-center w-full h-full hover:text-hover">5</a>
+                    </li>
+                    <li class="h-pag w-pag bg-bglight border hover:bg-primary border-primary rounded-full ">
+                        <a href="#" class="flex justify-center items-center w-full h-full hover:text-hover">...</a>
+                    </li>
+                    <li class="h-pag w-pag bg-bglight hover:bg-primary border border-primary rounded-full ">
+                        <a href="#" class="flex justify-center items-center w-full h-full hover:text-hover">25</a>
+                    </li>
+
+
+
+                </ul>
+            </nav>
+
+
+        </section>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="bg-hover h-fit py-84 border-t border-black mt-auto w-full">
+        <section
+            class="w-full flex lg:flex-row flex-wrap lg:gap-x-12 mx-auto lg:items-start font-bold text-sm text-primary order-none kmd:flex-col kmd:justify-center">
+            <img class="w-card h-[82px] order-none kmd:order-last" src="./img/Logomark.svg" alt="Logomark">
+
+            <ul class="flex flex-col gap-y-5 xxl:w-card gap-x-12 kmd:order-first">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">RETURNS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+
+            <ul
+                class="grid gap-y-5 gap-x-12 l:gap-x-6  kmd:grid-flow-col xxl:grid-rows-4 xxl:min-w-[600px] order-none xxl:grid-cols-1">
+                <li><a href="#">TERMS & CONDITIONS</a></li>
+                <li><a href="#">PRIVACY POLICY</a></li>
+                <li><a href="#">COOKIE POLICY</a></li>
+                <li><a href="#">COOKIE SETTINGS</a></li>
+                <li><a href="#">ABOUT SECOND CHANCE</a></li>
+                <li><a href="#">CAREERS</a></li>
+                <li><a href="#">FACEBOOK</a></li>
+                <li><a href="#">INSTAGRAM</a></li>
+            </ul>
+        </section>
+    </footer>
+
+    <script src="./script/index.js" async></script>
+    <script src="./script/customElem.js" type="module"></script>
+
+</body>
+
+</html>
