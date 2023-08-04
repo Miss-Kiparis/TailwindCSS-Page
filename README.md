@@ -1,6 +1,6 @@
 # TailwindCSS Page
 
-Link: https://voodoo-page.onrender.com
+[Click here to preview](https://voodoo-page.onrender.com)
 
 A simple webpage with Shopify API & TailwindCSS connected. 
 
